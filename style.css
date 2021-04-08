@@ -1,0 +1,91 @@
+@import url(themes/dark.css);
+
+/* @import url(themes/bright.css); */
+
+@keyframes c1 {
+    from {
+        background-color: var(--color1);
+    }
+    to {
+        background-color: var(--color1a);
+    }
+}
+
+@keyframes c2 {
+    from {
+        background-color: var(--color2);
+    }
+    to {
+        background-color: var(--color2a);
+    }
+}
+
+@keyframes c3 {
+    from {
+        background-color: var(--color3);
+    }
+    to {
+        background-color: var(--color3a);
+    }
+}
+
+@keyframes c4 {
+    from {
+        background-color: var(--color4);
+    }
+    to {
+        background-color: var(--color4a);
+    }
+}
+
+@keyframes c5 {
+    from {
+        background-color: var(--color5);
+    }
+    to {
+        background-color: var(--color5a);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header,
+.menu,
+.main,
+.right,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 15vh;
+    animation: c1 5s infinite alternate;
+}
+
+.menu {
+    display: flex;
+    animation: c2 5s infinite alternate;
+    flex-direction: column;
+    height: 20vh;
+}
+
+.main {
+    display: flex;
+    animation: c3 5s infinite alternate;
+    flex-direction: row;
+    height: 20vh;
+}
+
+.right {
+    animation: c4 5s infinite alternate;
+}
+
+.footer {
+    display: flex;
+    animation: c5 5s infinite alternate;
+}
